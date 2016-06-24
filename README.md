@@ -7,6 +7,7 @@ A formal definition of the QoE metrics is available in the technical report [2] 
 [1] "QoE Beyond the MOS: An In-Depth Look at QoE via Better Metrics and their Relation to MOS"
     Tobias Hoßfeld, Poul E. Heegaard, Martín Varela, Sebastian Möller
     Springer journal 'Quality and User Experience', 2016
+
 [2] "Formal Definition of QoE Metrics"
     Tobias Hoßfeld, Poul E. Heegaard, Martín Varela, Sebastian Möller
     Technical Report, arXiv cs.MM, 2016
