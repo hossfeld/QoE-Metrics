@@ -6,7 +6,7 @@ A formal definition of the QoE metrics is available in the technical report [2] 
 
 [1] "QoE Beyond the MOS: An In-Depth Look at QoE via Better Metrics and their Relation to MOS" by Tobias Hoßfeld, Poul E. Heegaard, Martín Varela, Sebastian Möller. Springer journal 'Quality and User Experience', 2016
 
-[2] "Formal Definition of QoE Metrics" by Tobias Hoßfeld, Poul E. Heegaard, Martín Varela, Sebastian Möller. Technical Report, arXiv cs.MM, 2016
+[2] "Formal Definition of QoE Metrics" by Tobias Hoßfeld, Poul E. Heegaard, Martín Varela, Sebastian Möller. Technical Report, arXiv:1607.00321 [cs.MM]. Online: http://arxiv.org/abs/1607.00321
 
 ## Description of Files
 
@@ -17,9 +17,9 @@ exampleDiscreteRating.m: An example of user ratings given as matrix in the file 
 exampleContinousRating.m: An example of QoE ratings using a continuous rating scale is provided. The data set is given as matrix 'continuousRatings.csv'. A subset of the data is provided in 'continuousRatingsWithGroups.csv' as vector with a grouping variable. 
 
 qoeValues = csvread('continuousRatings.csv');
-[stat,p]=QoEmetrics(qoeValues,'low',1);
+[stat,p]=QoEmetrics(qoeValues);
 
 M = csvread('continuousRatingsWithGroups.csv');
 qoeValues=M(:,2); groups=M(:,1);
-[stat,p]=QoEmetrics(qoeValues,groups,'low',1);
+[stat,p]=QoEmetrics(qoeValues,groups);
 
